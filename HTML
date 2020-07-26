@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<main>
+  <div class="container">
+    <header class="header">
+  <h1 id="title" class="text-center">Do you have what it takes to be a Doodle?</h1>
+    </header>
+    
+  <p id="description" class="description text-center">We appreciate you telling us what doodle you are.</p><hr width="340px">
+  
+  <form id="survey-form">
+  <div class="form-group">
+    <label id="name-label" for="name">Name</label> <br />
+    
+    <input type="text" 
+           name="name" 
+           id="name" 
+           class="form-control"
+           placeholder="Enter your name"
+           required
+           />
+    </div>
+           <br />
+    
+   <div class="form-group">
+     <label id="email-label" for="email">Email</label> <br/>
+     
+      <input type="email" 
+             name="email" 
+             id="email"
+             class="form-control"
+             placeholder="Enter your email"
+             
+             required
+             />
+    </div>
+           <br />
+    
+    <div class="form-group">
+      <label id="number-label" for="gender">Age<span class="clue">(optional)</span></label>
+      <br />
+      
+      <input type="number"
+             name="age"
+             id="number"
+             min="1"
+             max="99"
+             class="form-control"
+             placeholder="Human Years"
+             />
+    </div>
+    
+    <div class="form-group">
+      <p>What kind of fur do you have?</p>
+     <select id="dropdown"
+             name="fur"
+             class="form-select"
+             required
+             />
+      <option disabled selected value>Select Type</option>
+      <option value="curly">Curly</option>
+      <option value="wavy">Wavy</option>
+      <option value="straight">Straight</option>
+      <option value="short">Short</option>
+      </select>
+    </div>
+     <div class="form-group">
+      <p>What color is your fur?</p>
+     <select id="pick"
+             name="color"
+             class="form-select"
+             required
+             />
+      <option disabled selected value>Select Color</option>
+      <option value="golden">Golden</option>
+      <option value="black">Black</option>
+      <option value="white">White</option>
+      <option value="gray">Gray</option>
+      </select>
+    </div>
+  
+  <div class="form-group">
+    <p>Are you friendly?</p>
+    <label> 
+      <input type="radio"
+             name="yes/no"
+             value="yes"
+             class="input-radio"
+             checked
+             />Yes</label>
+    <label>
+      <input type="radio"
+             name="yes/no"
+             value="no"
+             class="input-radio"
+             />No</label>
+  </div>
+    <div class="form-group">
+      <p>Select your traits <br />
+        <span class="clue">(Check all that apply)</span>
+        </p>
+      <label>
+        <input type="checkbox"
+               name="prefer"
+               value="chill"
+               class="input-checkbox">Chill</label>
+      <br />
+      <label>
+        <input type="checkbox"
+               name="prefer"
+               value="anxious"
+               class="input-checkbox">Anxious</label>
+      <br />
+      <label>
+        <input type="checkbox"
+               name="prefer"
+               value="energetic"
+               class="input-checkbox">Energetic</label>
+      <br />
+      <label>
+        <input type="checkbox"
+               name="prefer"
+               value="funny"
+               class="input-checkbox">Funny</label>
+      <br />
+      <label>
+        <input type="checkbox"
+               name="prefer"
+               value="lazy"
+               class="input-checkbox">Lazy</label>
+      <br />
+      <label>
+        <input type="checkbox"
+               name="prefer"
+               value="none"
+               class="input-checkbox">None of the above</label>
+  </div>
+      <div class="form-group">
+        <p>Comments</p>
+        <textarea 
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder= "Enter any comments here"
+        ></textarea>
+      </div>
+      
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button"><strong>
+          Submit</strong>
+        </button>
+  </div>                           
+  </form>
+
+<footer class="copy">Copywright 2020, Tanner Dennis</footer>
+  
+  </div>
+</main>
+</html>
